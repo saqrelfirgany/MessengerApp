@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".register_login.RegisterActivity" >
+
+    <EditText
+        android:id="@+id/username_editext_rergistraion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectphoto_button_regester" />
+
+    <EditText
+        android:id="@+id/email_edittext_registration"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/username_editext_rergistraion"
+        app:layout_constraintStart_toStartOf="@+id/username_editext_rergistraion"
+        app:layout_constraintTop_toBottomOf="@+id/username_editext_rergistraion" />
+
+    <EditText
+        android:id="@+id/password_edittext_registraion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_reg_log"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_edittext_registration"
+        app:layout_constraintStart_toStartOf="@+id/email_edittext_registration"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext_registration" />
+
+    <Button
+        android:id="@+id/reguster_button_regestration"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_registraion"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_registraion"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_registraion" />
+
+    <TextView
+        android:id="@+id/already_have_account_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Already have an account ?"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/reguster_button_regestration"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/reguster_button_regestration"
+        app:layout_constraintTop_toBottomOf="@+id/reguster_button_regestration" />
+
+    <Button
+        android:id="@+id/selectphoto_button_regester"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_img_button"
+        android:text="Select Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectphoto_imageview_register"
+        app:civ_border_width="4dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectphoto_button_regester"
+        app:layout_constraintEnd_toEndOf="@+id/selectphoto_button_regester"
+        app:layout_constraintStart_toStartOf="@+id/selectphoto_button_regester"
+        app:layout_constraintTop_toTopOf="@+id/selectphoto_button_regester" />
+</androidx.constraintlayout.widget.ConstraintLayout>
